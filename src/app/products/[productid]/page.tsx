@@ -1,12 +1,12 @@
 export default async function ProductPage({
   params,
 }: {
-  params: Promise<{ productid: string }>;
+  params: Promise<{ productId: string }>;
 }) {
-  const productid = (await params).productid;
+  const productId = (await params).productId;
   return (
     <>
-      <h1>Details about the product {productid}</h1>
+      <h1>Details about the product {productId}</h1>
     </>
   );
 }
